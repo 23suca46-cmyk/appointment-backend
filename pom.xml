@@ -24,6 +24,9 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+         <properties>
+  <sonar.organization>23suca46-cmyk</sonar.organization>
+</properties>
 
     <dependencies>
         <!-- Spring Boot Web Starter -->

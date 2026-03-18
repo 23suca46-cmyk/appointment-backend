@@ -13,7 +13,13 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/appointments")
-@CrossOrigin(origins = "http://localhost:3000")
+
+// ✅ FIXED CORS CONFIGURATION
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://appointmentfrontend-ggg0gxcdd6g9dze5.southeastasia-01.azurewebsites.net"
+})
+
 public class AppointmentController {
     
     @Autowired

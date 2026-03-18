@@ -27,4 +27,7 @@ jobs:
           -Dsonar.projectKey=23suca46-cmyk_appointment-backend \
           -Dsonar.organization=23suca46-cmyk \
           -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+          -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
+          -Dsonar.sources=. \
+          -Dsonar.java.binaries=target \
+          -X
